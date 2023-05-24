@@ -102,7 +102,7 @@ def run(
     #classify model
     modelcs = []
     for i in range(5):
-        modelc = MobileNetV3_Small(num_classes=96).to(device)
+        modelc = MobileNetV3_Small_ca(num_classes=96).to(device)
 
         weights_path = os.path.join(rec_weights,f'model-fold-{i}.pth')
 
@@ -251,7 +251,7 @@ def run(
 def parse_opt():
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'weight/recognition/5n_eiou_ca_0775/weights/best.pt', help='model path(s)')
-    parser.add_argument('--rec-weights', nargs='+', type=str, default=ROOT /'weight/se',help='model.pt path(s)')
+    parser.add_argument('--rec-weights', nargs='+', type=str, default=ROOT /'weight/ca',help='model.pt path(s)')
     parser.add_argument('--source', type=str, default=ROOT / 'data/test1', help='file/dir/URL/glob, 0 for webcam')
     # parser.add_argument('--data', type=str, default=ROOT / 'data/fold/fold1.yaml', help='(optional) dataset.yaml path')
     parser.add_argument('--imgsz', '--img', '--img-size', nargs='+', type=int, default=[640], help='inference size h,w')
