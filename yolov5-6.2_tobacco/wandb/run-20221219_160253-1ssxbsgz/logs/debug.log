@@ -1,0 +1,25 @@
+2022-12-19 16:02:53,611 INFO    MainThread:1712 [wandb_setup.py:_flush():68] Configure stats pid to 1712
+2022-12-19 16:02:53,611 INFO    MainThread:1712 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Administrator\.config\wandb\settings
+2022-12-19 16:02:53,611 INFO    MainThread:1712 [wandb_setup.py:_flush():68] Loading settings from D:\yolov5-6.2\wandb\settings
+2022-12-19 16:02:53,611 INFO    MainThread:1712 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-12-19 16:02:53,611 INFO    MainThread:1712 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': 'D:/yolov5-6.2/train.py'}
+2022-12-19 16:02:53,611 INFO    MainThread:1712 [wandb_setup.py:_flush():68] Applying login settings: {'login_timeout': 30}
+2022-12-19 16:02:53,611 INFO    MainThread:1712 [wandb_init.py:_log_setup():476] Logging user logs to D:\yolov5-6.2\wandb\run-20221219_160253-1ssxbsgz\logs\debug.log
+2022-12-19 16:02:53,611 INFO    MainThread:1712 [wandb_init.py:_log_setup():477] Logging internal logs to D:\yolov5-6.2\wandb\run-20221219_160253-1ssxbsgz\logs\debug-internal.log
+2022-12-19 16:02:53,611 INFO    MainThread:1712 [wandb_init.py:init():516] calling init triggers
+2022-12-19 16:02:53,611 INFO    MainThread:1712 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov5s.pt', 'cfg': '', 'data': 'data/tobacco.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.01, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0}, 'epochs': 10, 'batch_size': 2, 'imgsz': 640, 'rect': False, 'resume': False, 'nosave': False, 'noval': False, 'noautoanchor': False, 'noplots': False, 'evolve': None, 'bucket': '', 'cache': None, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'optimizer': 'SGD', 'sync_bn': False, 'workers': 0, 'project': 'runs\\train', 'name': 'exp', 'exist_ok': False, 'quad': False, 'cos_lr': False, 'label_smoothing': 0.0, 'patience': 100, 'freeze': [0], 'save_period': -1, 'seed': 0, 'local_rank': -1, 'entity': None, 'upload_dataset': False, 'bbox_interval': -1, 'artifact_alias': 'latest', 'save_dir': 'runs\\train\\exp2'}
+2022-12-19 16:02:53,611 INFO    MainThread:1712 [wandb_init.py:init():569] starting backend
+2022-12-19 16:02:53,611 INFO    MainThread:1712 [wandb_init.py:init():573] setting up manager
+2022-12-19 16:02:53,642 INFO    MainThread:1712 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn, using: spawn
+2022-12-19 16:02:53,657 INFO    MainThread:1712 [wandb_init.py:init():580] backend started and connected
+2022-12-19 16:02:53,657 INFO    MainThread:1712 [wandb_init.py:init():658] updated telemetry
+2022-12-19 16:02:53,657 INFO    MainThread:1712 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-12-19 16:02:55,077 INFO    MainThread:1712 [wandb_run.py:_on_init():2006] communicating current version
+2022-12-19 16:02:57,552 INFO    MainThread:1712 [wandb_run.py:_on_init():2010] got version response 
+2022-12-19 16:02:57,552 INFO    MainThread:1712 [wandb_init.py:init():728] starting run threads in backend
+2022-12-19 16:03:02,624 INFO    MainThread:1712 [wandb_run.py:_console_start():1986] atexit reg
+2022-12-19 16:03:02,624 INFO    MainThread:1712 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2022-12-19 16:03:02,624 INFO    MainThread:1712 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2022-12-19 16:03:02,624 INFO    MainThread:1712 [wandb_run.py:_redirect():1931] Redirects installed.
+2022-12-19 16:03:02,624 INFO    MainThread:1712 [wandb_init.py:init():765] run started, returning control to user process
