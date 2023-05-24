@@ -102,13 +102,13 @@ def run(
     #classify model
     modelcs = []
     for i in range(5):
-        modelc = MobileNetV3_Small(num_classes=96).to('cuda')
+        modelc = MobileNetV3_Small(num_classes=96).to(device)
 
         weights_path = os.path.join(rec_weights,f'model-fold-{i}.pth')
 
         modelc.load_state_dict(torch.load(weights_path, map_location=torch.device('cpu')))
 
-        modelc.to('cuda').eval()
+        modelc.to(device).eval()
 
         modelcs.append(modelc)
 
