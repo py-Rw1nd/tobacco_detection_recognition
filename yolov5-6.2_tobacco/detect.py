@@ -50,7 +50,6 @@ from utils.plots import Annotator, colors, save_one_box
 from utils.torch_utils import select_device, smart_inference_mode, time_sync
 from models.MobileNetv3_small_ca import *
 from models.MobileNetv3_se import *
-from test02 import *
 
 @smart_inference_mode()
 def run(
