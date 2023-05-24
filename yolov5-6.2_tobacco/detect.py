@@ -251,7 +251,7 @@ def run(
 
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'weight/n/5n_ca_eiou_0775.pt', help='model path(s)')
+    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'weight/recognition/5n_eiou_ca_0775/weights/best.pt', help='model path(s)')
     parser.add_argument('--rec-weights', nargs='+', type=str, default=ROOT /'weight/se',help='model.pt path(s)')
     parser.add_argument('--source', type=str, default=ROOT / 'data/test1', help='file/dir/URL/glob, 0 for webcam')
     # parser.add_argument('--data', type=str, default=ROOT / 'data/fold/fold1.yaml', help='(optional) dataset.yaml path')
