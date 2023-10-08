@@ -1030,7 +1030,7 @@ def apply_classifier(x, model, img, im0):
                 # m.eval()
                 m.to(d.device)
                 # m.eval()
-                pred_cls2 = m(ims.to(d.device))  # classifier prediction
+                pred_cls2 += m(ims.to(d.device))  # classifier prediction
 
             pred_cls2 = pred_cls2.argmax(1)
             print(pred_cls2)
